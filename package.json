@@ -1,0 +1,36 @@
+{
+  "name": "qpm_faucet",
+  "version": "0.1.0",
+  "description": "402 payments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantumpayments/faucet.git"
+  },
+  "keywords": [
+    "402",
+    "payments"
+  ],
+  "author": "Melvin Carvalho <melvincarvalho@gmail.com> (https://melvincarvalho.com/#me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quantumpayments/faucet/issues"
+  },
+  "homepage": "https://github.com/quantumpayments/faucet#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "commander": "^2.9.0",
+    "cors": "^2.7.1",
+    "dateformat": "^1.0.12",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "http-error": "0.0.6",
+    "sequelize": "^3.23.2",
+    "vhost": "^3.0.2",
+    "webcredits": "^0.1.10",
+    "webid": "^0.3.7"
+  }
+}
