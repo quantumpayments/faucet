@@ -1,2 +1,6 @@
-module.exports = require('./lib/webcredits')
-module.exports.createServer = require('./lib/create-server')
+module.exports = {
+  handlers : {
+    faucet : require('./lib/handlers/faucet'),
+    faucetpost : require('./lib/handlers/addcredits')
+  }
+}
