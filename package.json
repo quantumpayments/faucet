@@ -1,6 +1,6 @@
 {
   "name": "qpm_faucet",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "faucet payments",
   "main": "index.js",
   "scripts": {
