@@ -28,6 +28,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "http-error": "0.0.6",
+    "qpm_ui": "0.0.15",
     "sequelize": "^3.23.2",
     "vhost": "^3.0.2",
     "webcredits": "^0.1.10",
