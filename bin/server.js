@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 // requires
+var createApp  = require('../lib/create-app')
+var express    = require('express')
 var program    = require('commander')
 var wc         = require('../')
-var express    = require('express')
+var wc_express = require('wc_express')
+
 
 function bin(argv) {
 
@@ -18,7 +21,7 @@ function bin(argv) {
 
   var app
   try {
-    app = wc.createServer(program)
+    app = wc_express.createServer(program, createApp)
   } catch (e) {
     if (e.code === 'EACCES') {
       console.log('You need root privileges to start on this port')
