@@ -2,9 +2,7 @@
 
 // requires
 var createApp  = require('../lib/create-app')
-var express    = require('express')
 var program    = require('commander')
-var wc         = require('../')
 var wc_express = require('wc_express')
 
 
