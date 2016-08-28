@@ -1,5 +1,7 @@
 #!/bin/bash
 
+npm --no-git-tag-version version patch
+
 git add -u
 git commit -m "$1"
 git push origin master
@@ -10,4 +12,5 @@ git push origin gh-pages
 
 git checkout master
 
-bower install
+npm publish
+
