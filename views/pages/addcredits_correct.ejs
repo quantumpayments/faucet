@@ -2,6 +2,27 @@
 <html lang="en">
 <head>
   <% include ../partials/head %>
+  <style type="text/css">
+    @font-face{
+      font-family: 'ITV Reem';
+      src: url(https://www.itvstatic.com/assets/fonts/reem/itv_reem_web-medium.woff) format('woff');
+    }
+    .spin {
+      background-color: #999;
+      font-family: 'ITV Reem';
+      font-size: 82px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-header {
+      width: 60%;
+      font-size: 32px;
+    }
+
+  </style>
+
 </head>
 <body>
 
@@ -10,13 +31,16 @@
   <div class="content-wrapper">
     <section class="content-header">
 
-      <div>
+      <div style="background-color : gray">
       Correct!<br>
-      <%= ui.payout %> has been added to your <a href="/balance">balance</a><br>
+      <div class="spin" style="color:black"></div> has been added to your <a href="/balance">balance</a><br>
       </div>
 
     </section>
   </div>
+  <script>
+    odoo.default({ el:".spin",value: <%= ui.payout %> + "", "color" : "black", "background-color" : "green" })
+  </script>
 
   <footer>
     <% include ../partials/footer %>
